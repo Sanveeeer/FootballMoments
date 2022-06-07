@@ -1,0 +1,274 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;  
+}
+
+/* Hero Section */
+
+.hero-img {
+  position: relative;
+  height: 500px;
+  background: url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80") no-repeat center;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container h1 {
+  font-size: 72px;
+  margin: 0;
+  letter-spacing: -5px;
+}
+
+.container h1 span {
+  border: 10px solid white;
+  padding: 6px 14px;
+  display: inline-block;
+  line-height: 70px;
+ 
+}
+
+.description {
+  margin: 20px;
+  display: block;
+  font-size: 26px;
+  text-shadow: 0 0 10px black;
+}
+
+.button {
+  color: black;
+  padding: 5px 15px;
+  font-size: 10px;
+  text-decoration: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* About Section */
+
+.about {
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .content img {
+  height: auto;
+  width: 600px;
+  max-width: 100%;
+}
+
+.rmn {
+  background: white;
+}
+
+.info {
+  width: 500px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.content {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info .aboutTitle {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.info p {
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+}
+
+/* Moments Section */
+
+.moments {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.momentsTitle {
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.ImgGrid {
+  display: flex;
+  max-width: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.gallery {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.gallery:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0,5s;
+}
+
+figure {
+  display: block;
+  text-align: center;
+  color: black;
+  text-transform:capitalize;
+  padding: 10px;
+  font-family:monospace;
+}
+
+/* Form */
+
+.formContainer {
+  background: url("https://images.unsplash.com/photo-1589487391730-58f20eb2c308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80");
+  background-size: cover;
+  padding: 100px 40px;
+  text-align: center;
+  color: black;
+}
+
+.formText {
+  max-width: 600px;
+  margin: 40px auto;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.email-box {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.email-box i{
+  background: black;
+  width: 40px;
+  line-height: 40px;
+}
+
+.tbox, .button2 {
+  border: none;
+  outline: none;
+}
+
+.tbox {
+  width: 0;
+  transition: 0.6s;
+}
+
+.email-box:hover > .tbox, .tbox:focus {
+  width: 260px;
+  padding: 0 10px;
+}
+
+.button2 {
+  background: white ;
+  border-left: 1px solid black;
+  color: black;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Footer */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  height: 100px;
+  padding: 50px;
+}
+
+.footer_copy {
+  color: rgb(0, 0, 0);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1180px) {
+  .about {
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+    text-align: center;
+  }
+  
+  .about .content img {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about .content img {
+    margin-bottom: 35px;
+  }
+
+  .info .aboutTitle{
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .momentsTitle {
+    font-size: 35px;
+  }
+}
